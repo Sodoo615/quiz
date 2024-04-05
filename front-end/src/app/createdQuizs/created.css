@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    width: 100vw;
+}
+
+.crequizs {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 20px;
+    padding: 80px;
+}
+
+
+.images {
+    background-color: #fff;
+    width: 300px;
+    height: 330px;
+    border-radius: 8px;
+
+}
+
+.mans {
+    width: 300px;
+    height: 230px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+@media (max-width: 2850px) {
+
+    .mans {
+        width: 300px;
+        height: 230px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: row;
+
+        gap: 168px;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .mans {
+        width: 300px;
+        height: 230px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: row;
+
+        gap: 168px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .mans {
+        width: 300px;
+        height: 230px;
+    }
+
+    .images {
+        background-color: #fff;
+        width: 300px;
+        height: 330px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media (max-width: 1300px) {
+    .mans {
+        width: 280px;
+        height: 230px;
+    }
+
+    .images {
+        background-color: #fff;
+        width: 280px;
+        height: 330px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: row;
+        gap: 168px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .mans {
+        width: 280px;
+        height: 230px;
+    }
+
+    .images {
+        background-color: #fff;
+        width: 280px;
+        height: 330px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: row;
+        gap: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mans {
+        width: 280px;
+        height: 230px;
+    }
+
+    .images {
+        background-color: #fff;
+        width: 280px;
+        height: 330px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+        gap: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mans {
+        width: 240px;
+        height: 200px;
+    }
+
+    .member {
+        width: 150px;
+        height: 200px;
+    }
+
+    .images {
+        margin-top: 30px;
+        background-color: #fff;
+        width: 240px;
+        height: 300px;
+    }
+
+    .bak {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .search input {
+        width: 50px;
+        height: 40px;
+    }
+
+    .crequizs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+
+        gap: 180px;
+    }
+}
+
+.title {
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color: #000;
+}
+
+.bak {
+
+    padding: 18px;
+}
+
+.back {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background: #6d44b8;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.plyButton {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plyButton button {
+    width: 280px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.plyButton button:hover {
+    background-color: #6d44b8;
+    color: #000;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.lds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%, #ffa516);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
